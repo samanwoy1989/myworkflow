@@ -1,7 +1,7 @@
-name: "myworkflow"
+name: myworkflow
 output_dir: ../docs
 navbar:
-  title: "myworkflow"
+  title: myworkflow
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/samanwoy1989/myworkflow
 output:
   bookdown::html_document2:
     base_format: workflowr::wflow_html
