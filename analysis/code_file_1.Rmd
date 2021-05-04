@@ -1,0 +1,12 @@
+---
+title: "Code_file_1"
+output: bookdown::html_document2
+---
+  
+```{r, figure1, fig.cap= "Figure caption"}
+hist(mtcars$mpg)
+```
+Try referencing figure \@ref(fig:figure1). 
+
+
+

@@ -10,7 +10,8 @@ navbar:
   - text: License
     href: license.html
 output:
-  workflowr::wflow_html:
+  bookdown::html_document2:
+    base_format: workflowr::wflow_html
     toc: yes
     toc_float: yes
     theme: cosmo
