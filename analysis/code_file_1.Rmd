@@ -1,5 +1,5 @@
 ---
-title: "Code_file_1"
+title: "Playing with Metagenomic data"
 output: bookdown::html_document2
 ---
   
@@ -7,6 +7,61 @@ output: bookdown::html_document2
 hist(mtcars$mpg)
 ```
 Try referencing figure \@ref(fig:figure1). 
+```{r}
+suppressPackageStartupMessages(library(curatedMetagenomicData))
+```
+Read depth of all samples across all studies
+combined_metadata also provides technical information for each sample like sequencing platform, read length, and read depth. The following uses combined_metadata to create a boxplot of read depth for each sample in each study, with boxes colored by body site. First, create a ranking of datasets by median read depth:
+```{r, create_rank_dataframe}
+dsranking <- combined_metadata %>%
+  as.data.frame() %>% 
+  group_by(dataset_name) %>%
+  summarize(mediandepth = median(number_reads) / 1e6) %>%
+  mutate(dsorder = rank(mediandepth)) %>%
+  arrange(dsorder)
+```
+```{r, plotting_figure_1}
+suppressPackageStartupMessages(library(ggplot2))
+combined_metadata %>%
+  as.data.frame() %>%
+  mutate(ds = factor(combined_metadata$dataset_name, levels=dsranking$dataset_name)) %>%
+  ggplot(aes(ds, number_reads / 1e6, fill=body_site)) + 
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  labs(x="Dataset", y="Read Depth (millions)")
+```
+Acessing individual datasets
+```{r}
+loman.eset = LomanNJ_2013.metaphlan_bugs_list.stool()
+```
+```{r, eval=FALSE}
+suppressPackageStartupMessages(library(phyloseq))
+loman.pseq = ExpressionSet2phyloseq( loman.eset )
+wt = UniFrac(loman.tree, weighted=TRUE, normalized=FALSE, 
+             parallel=FALSE, fast=TRUE)
+plot(hclust(wt), main="Weighted UniFrac distances")
+```
 
 
+```{r}
+x = 1:100 # initiate vector to cumulatively sum
+
+# Method 1: with a for loop (10 lines)
+cs_for = function(x){
+  for(i in x){
+    if(i == 1){
+      xc = x[i]
+    } else {
+      xc = c(xc, sum(x[1:i]))
+    }
+  }
+  xc
+}
+
+# Method 2: with apply (3 lines)
+cs_apply = function(x){
+  sapply(x, function(x) sum(1:x))
+}
+
+```
 

@@ -11,7 +11,7 @@
 
 
 
-<title>Code_file_1</title>
+<title>Playing with Metagenomic data</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -35,6 +35,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/master/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -338,7 +340,13 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/samanwoy1989/myworkflow">
+    <span class="fas fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -348,7 +356,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Code_file_1</h1>
+<h1 class="title toc-ignore">Playing with Metagenomic data</h1>
 
 </div>
 
@@ -357,7 +365,7 @@ div.tocify {
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
 workflowr
-<span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -367,7 +375,7 @@ workflowr
 </li>
 <li>
 <a data-toggle="tab" href="#checks">
-Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </a>
 </li>
 <li>
@@ -377,14 +385,14 @@ Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></sp
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-05-04
+<strong>Last updated:</strong> 2021-05-07
 </p>
 <p>
 <strong>Checks:</strong>
 <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-7
+6
 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
-0
+1
 </p>
 <p>
 <strong>Knit directory:</strong>
@@ -407,16 +415,21 @@ The <em>Past versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
-<span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-<strong>R Markdown file:</strong> up-to-date
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
+<span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<strong>R Markdown file:</strong> uncommitted changes
 </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you
-know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes.
+To know which version of the R Markdown file created these
+results, you’ll want to first commit it to the Git repo. If
+you’re still working on the analysis, you can ignore this
+warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and
+build the HTML.</p>
 </div>
 </div>
 </div>
@@ -505,20 +518,20 @@ makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong4adc98c">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomsamanwoy1989myworkflowtree4dc86636ebe06e5ba298271906c92d4ca35e1a29targetblank4dc8663a">
 <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
-<strong>Repository version:</strong> 4adc98c
+<strong>Repository version:</strong> <a href="https://github.com/samanwoy1989/myworkflow/tree/4dc86636ebe06e5ba298271906c92d4ca35e1a29" target="_blank">4dc8663</a>
 </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong4adc98c" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomsamanwoy1989myworkflowtree4dc86636ebe06e5ba298271906c92d4ca35e1a29targetblank4dc8663a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 4adc98c.
+The results in this page were generated with repository version <a href="https://github.com/samanwoy1989/myworkflow/tree/4dc86636ebe06e5ba298271906c92d4ca35e1a29" target="_blank">4dc8663</a>.
 See the <em>Past versions</em> tab to see a history of the changes made to the
 R Markdown and HTML files.
 </p>
@@ -532,10 +545,16 @@ results were generated:
 </p>
 <pre><code>
 Ignored files:
+    Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+    Ignored:    analysis/figure/
 
 Untracked files:
     Untracked:  smLibrary.bib
+
+Unstaged changes:
+    Modified:   analysis/code_file_1.Rmd
+    Deleted:    analysis/code_file_2_files/figure-html/pressure-1.png
 
 </code></pre>
 <p>
@@ -582,10 +601,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/samanwoy1989/myworkflow/6e7e8ef80c7a5c54713352ca87b94959c38119f3/docs/code_file_1.html" target="_blank">6e7e8ef</a>
+</td>
+<td>
+samanwoy1989
+</td>
+<td>
+2021-05-04
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-4adc98c
+<a href="https://github.com/samanwoy1989/myworkflow/blob/4adc98cf2781ad01af794e5a47959620de4224af/analysis/code_file_1.Rmd" target="_blank">4adc98c</a>
 </td>
 <td>
 samanwoy1989
@@ -611,7 +647,72 @@ my_workflow_test
 Figure 1: Figure caption
 </p>
 </div>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-figure1-1">
+Past versions of figure1-1.png
+</button>
+</p>
+<div id="fig-figure1-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/samanwoy1989/myworkflow/blob/6e7e8ef80c7a5c54713352ca87b94959c38119f3/docs/figure/code_file_1.Rmd/figure1-1.png" target="_blank">6e7e8ef</a>
+</td>
+<td>
+samanwoy1989
+</td>
+<td>
+2021-05-04
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>Try referencing figure <a href="#fig:figure1">1</a>.</p>
+<pre class="r"><code>suppressPackageStartupMessages(library(curatedMetagenomicData))</code></pre>
+<p>Read depth of all samples across all studies
+combined_metadata also provides technical information for each sample like sequencing platform, read length, and read depth. The following uses combined_metadata to create a boxplot of read depth for each sample in each study, with boxes colored by body site. First, create a ranking of datasets by median read depth:</p>
+<pre class="r"><code>dsranking &lt;- combined_metadata %&gt;%
+  as.data.frame() %&gt;% 
+  group_by(dataset_name) %&gt;%
+  summarize(mediandepth = median(number_reads) / 1e6) %&gt;%
+  mutate(dsorder = rank(mediandepth)) %&gt;%
+  arrange(dsorder)</code></pre>
+<pre class="r"><code>suppressPackageStartupMessages(library(ggplot2))
+combined_metadata %&gt;%
+  as.data.frame() %&gt;%
+  mutate(ds = factor(combined_metadata$dataset_name, levels=dsranking$dataset_name)) %&gt;%
+  ggplot(aes(ds, number_reads / 1e6, fill=body_site)) + 
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  labs(x=&quot;Dataset&quot;, y=&quot;Read Depth (millions)&quot;)</code></pre>
+<p><img src="figure/code_file_1.Rmd/plotting_figure_1-1.png" width="672" style="display: block; margin: auto;" />
+Acessing individual datasets</p>
+<pre class="r"><code>loman.eset = LomanNJ_2013.metaphlan_bugs_list.stool()</code></pre>
+<pre><code>snapshotDate(): 2020-10-27</code></pre>
+<pre><code>see ?curatedMetagenomicData and browseVignettes(&#39;curatedMetagenomicData&#39;) for documentation</code></pre>
+<pre><code>loading from cache</code></pre>
+<pre class="r"><code>suppressPackageStartupMessages(library(phyloseq))
+loman.pseq = ExpressionSet2phyloseq( loman.eset )
+wt = UniFrac(loman.tree, weighted=TRUE, normalized=FALSE, 
+             parallel=FALSE, fast=TRUE)
+plot(hclust(wt), main=&quot;Weighted UniFrac distances&quot;)</code></pre>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -638,22 +739,53 @@ locale:
 [11] LC_MEASUREMENT=en_IN.UTF-8 LC_IDENTIFICATION=C       
 
 attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
+[1] parallel  stats     graphics  grDevices utils     datasets  methods  
+[8] base     
 
 other attached packages:
-[1] workflowr_1.6.2
+ [1] ggplot2_3.3.3                 curatedMetagenomicData_1.20.0
+ [3] ExperimentHub_1.16.1          dplyr_1.0.5                  
+ [5] Biobase_2.50.0                AnnotationHub_2.22.1         
+ [7] BiocFileCache_1.14.0          dbplyr_2.1.1                 
+ [9] BiocGenerics_0.36.1           workflowr_1.6.2              
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.6        whisker_0.4       knitr_1.32        magrittr_2.0.1   
- [5] R6_2.5.0          rlang_0.4.10      fansi_0.4.2       highr_0.9        
- [9] stringr_1.4.0     tools_4.0.5       xfun_0.22         utf8_1.2.1       
-[13] git2r_0.28.0      jquerylib_0.1.3   htmltools_0.5.1.1 ellipsis_0.3.1   
-[17] rprojroot_2.0.2   yaml_2.2.1        digest_0.6.27     tibble_3.1.1     
-[21] lifecycle_1.0.0   bookdown_0.21     crayon_1.4.1      later_1.1.0.1    
-[25] sass_0.3.1        vctrs_0.3.7       promises_1.2.0.1  fs_1.5.0         
-[29] glue_1.4.2        evaluate_0.14     rmarkdown_2.7     stringi_1.5.3    
-[33] bslib_0.2.4       compiler_4.0.5    pillar_1.6.0      jsonlite_1.7.2   
-[37] httpuv_1.5.5      pkgconfig_2.0.3  </code></pre>
+ [1] Rcpp_1.0.6                    tidyr_1.1.3                  
+ [3] assertthat_0.2.1              rprojroot_2.0.2              
+ [5] digest_0.6.27                 utf8_1.2.1                   
+ [7] mime_0.10                     R6_2.5.0                     
+ [9] stats4_4.0.5                  RSQLite_2.2.7                
+[11] evaluate_0.14                 httr_1.4.2                   
+[13] highr_0.9                     pillar_1.6.0                 
+[15] rlang_0.4.11                  curl_4.3.1                   
+[17] whisker_0.4                   jquerylib_0.1.4              
+[19] blob_1.2.1                    S4Vectors_0.28.1             
+[21] rmarkdown_2.7                 labeling_0.4.2               
+[23] stringr_1.4.0                 munsell_0.5.0                
+[25] bit_4.0.4                     shiny_1.6.0                  
+[27] compiler_4.0.5                httpuv_1.6.0                 
+[29] xfun_0.22                     pkgconfig_2.0.3              
+[31] htmltools_0.5.1.1             tidyselect_1.1.1             
+[33] tibble_3.1.1                  interactiveDisplayBase_1.28.0
+[35] bookdown_0.22                 IRanges_2.24.1               
+[37] fansi_0.4.2                   withr_2.4.2                  
+[39] crayon_1.4.1                  later_1.2.0                  
+[41] rappdirs_0.3.3                grid_4.0.5                   
+[43] gtable_0.3.0                  jsonlite_1.7.2               
+[45] xtable_1.8-4                  lifecycle_1.0.0              
+[47] DBI_1.1.1                     git2r_0.28.0                 
+[49] magrittr_2.0.1                scales_1.1.1                 
+[51] stringi_1.5.3                 cachem_1.0.4                 
+[53] farver_2.1.0                  fs_1.5.0                     
+[55] promises_1.2.0.1              bslib_0.2.4                  
+[57] ellipsis_0.3.2                generics_0.1.0               
+[59] vctrs_0.3.8                   tools_4.0.5                  
+[61] bit64_4.0.5                   glue_1.4.2                   
+[63] purrr_0.3.4                   BiocVersion_3.12.0           
+[65] fastmap_1.1.0                 yaml_2.2.1                   
+[67] colorspace_2.0-1              AnnotationDbi_1.52.0         
+[69] BiocManager_1.30.12           memoise_2.0.0                
+[71] knitr_1.33                    sass_0.3.1                   </code></pre>
 </div>
 
 

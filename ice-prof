@@ -1,0 +1,18 @@
+memory profiling: GC profiling: line profiling: sample.interval=10000
+#File 1: <expr>
+:1183914:1620897:75315240:1149:"options" "sys.source" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1186188:1641140:76703928:249:"methods::is" "registerS3methods" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1193786:1655552:79028600:837:"lapply" "FUN" "lapply" "assignNativeRoutines" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1195130:1671562:79321760:117:"readRDS" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1201047:1693196:80611440:479:"%in%" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1205921:1705139:81617032:404:"importIntoEnv" "namespaceImportFrom" "namespaceImport" "loadNamespace" "loadNamespace" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1212235:1724015:83570424:871:"gzfile" "readRDS" "FUN" "lapply" "find.package" "library.dynam" "loadNamespace" "loadNamespace" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1223134:1800214:84580888:258:"lazyLoadDBfetch" "profvis" 
+:1239707:1992149:86423792:316:"lazyLoadDBfetch" "profvis" 
+:1259279:2076694:87629024:72:"lazyLoadDBfetch" "profvis" 
+:1265301:2102804:88774280:162:"get0" "getHook" "runUserHook" "loadNamespace" "loadNamespace" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1268962:2122313:89835704:510:"dynGet" "loadNamespace" "loadNamespace" "library" 1#5 "profvis" 
+:1274472:2154620:91965832:1342:"lazyLoadDBfetch" "profvis" 
+:1285343:2194677:93600864:542:"c" "profvis" 
+:1289717:2236873:94452176:439:"namespaceExport" "loadNamespace" "getNamespace" "asNamespace" "getExportedValue" "::" "fun" "runHook" "attachNamespace" "library" 1#5 "profvis" 
+:1291778:2272611:94749032:106:"makeRestartList" "withRestarts" ".signalSimpleWarning" "profvis" 
